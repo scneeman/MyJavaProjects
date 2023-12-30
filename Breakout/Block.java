@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 class Block{
-  public int x, y, size, red, green, blue, alpha;
+  protected int x, y, size, red, green, blue, alpha;
   
   public Block(int xp, int yp, int sizep){
     this.x = xp;

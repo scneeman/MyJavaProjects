@@ -3,7 +3,7 @@
 //https://dyclassroom.com/image-processing-project/how-to-convert-a-color-image-into-grayscale-image-in-java
 
 
-public class Main{  
+public class ImageLabMain{  
    
   public static void main(String args[]){
     // from the --Picture-- class we can access:
@@ -21,7 +21,7 @@ public class Main{
     //---------- examples
     // each of these receive two parameters:
     // the Picture object and the output filename
-    speckle(new Picture("download.jpg"), "outputSpeckle.jpg");
+    speckle(new Picture("ImageLab/download.jpg"), "ImageLab/outputSpeckle.jpg");
     //greyscale(new Picture("download.jpg"), "outputGS.jpg");
     //blackBox(new Picture("download.jpg"), "outputBB.jpg");
     //flipAcrossVertical(new Picture("download.jpg"), "outputFlipV.jpg");

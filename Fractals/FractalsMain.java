@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import java.awt.Color;
 import java.awt.Polygon;
 
-public class Main extends Canvas{
+public class FractalsMain extends Canvas{
 
   // setup variables
   static int w, h;
@@ -14,7 +14,7 @@ public class Main extends Canvas{
     w = 600;
     h = 600;
     JFrame frame = new JFrame("Fractal H Tree");
-    Canvas canvas = new Main(); // this must match the file/class name
+    Canvas canvas = new FractalsMain(); // this must match the file/class name
     canvas.setSize(w,h);
     frame.add(canvas);
     frame.pack();
@@ -24,8 +24,8 @@ public class Main extends Canvas{
 
   // 
   public void paint(Graphics g){
-    //drawH(g, w/2, h/2, 200, Color.black);  
-    drawIllusion(g, 300, 50, 300, 250);
+    drawH(g, w/2, h/2, 200, Color.black);  
+    //drawIllusion(g, 300, 50, 300, 250);
   }
 
 

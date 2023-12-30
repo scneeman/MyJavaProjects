@@ -1,4 +1,4 @@
-class Main {
+class TPSMain {
   // our array
   static int[][] mat = new int[4][4];
   public static void main(String[] args) {

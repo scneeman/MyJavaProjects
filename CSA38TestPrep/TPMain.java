@@ -1,4 +1,4 @@
-class Main {
+class TPMain {
   // our array
   static int[][] mat = new int[4][4];
   

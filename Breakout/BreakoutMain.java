@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.awt.event.*;
 
 
-public class Main extends Canvas implements KeyListener, MouseMotionListener{
+public class BreakoutMain extends Canvas implements KeyListener, MouseMotionListener{
   // variables for the Canvas size
   static int w, h;
 
@@ -17,7 +17,7 @@ public class Main extends Canvas implements KeyListener, MouseMotionListener{
   // TODO create a list of 'Blocks'
   static ArrayList<Block> blocks = new ArrayList<Block>();
 
-  public Main(){
+  public BreakoutMain(){
     addKeyListener(this);
     addMouseMotionListener(this);
   }
@@ -33,7 +33,7 @@ public class Main extends Canvas implements KeyListener, MouseMotionListener{
     pad = new Paddle(w/2, (int)(0.8*h), w/5);
     // standard setup stuff
     JFrame frame = new JFrame("My Drawing");
-    Canvas canvas = new Main(); // this must match the file/class name
+    Canvas canvas = new BreakoutMain(); // this must match the file/class name
     canvas.setSize(w,h);
     canvas.setBackground(new Color(255,255,255));
     frame.add(canvas);

@@ -4,14 +4,14 @@ import java.awt.Color;
 import javax.swing.JFrame;
 import java.awt.event.*; // for the keyboard listener
 
-class Main extends Canvas implements KeyListener{
+class StickMain extends Canvas implements KeyListener{
   // variables for the Canvas size
   static int w = 400;
   static int h = 300;
   public StickMan man = new StickMan(w, h, 100); // my object, you can change the size
 
   // for the keyboard listener
-  public Main(){
+  public StickMain(){
     addKeyListener(this);
   }
 
@@ -19,11 +19,11 @@ class Main extends Canvas implements KeyListener{
   public static void main(String[] args){
     // standard setup stuff
     JFrame frame = new JFrame("My Drawing");
-    Canvas canvas = new Main(); // this must match the file/class name
+    Canvas canvas = new StickMain(); // this must match the file/class name
     canvas.setSize(w,h);
     canvas.setBackground(new Color(255,255,255));
     
-    frame.getContentPane().add(new Main()); // needed for the KeyListener
+    frame.getContentPane().add(new StickMain()); // needed for the KeyListener
     frame.add(canvas);
     frame.pack();
     frame.setVisible(true);

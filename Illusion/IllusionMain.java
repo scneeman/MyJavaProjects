@@ -3,7 +3,7 @@ import java.awt.Graphics;
 import java.awt.Color;
 import javax.swing.JFrame;
 
-public class Main extends Canvas{
+public class IllusionMain extends Canvas{
   // variables for the Canvas size
   static int w, h;
 
@@ -14,7 +14,7 @@ public class Main extends Canvas{
     h = 600;
     // standard setup stuff
     JFrame frame = new JFrame("My Drawing");
-    Canvas canvas = new Main(); // this must match the file/class name
+    Canvas canvas = new IllusionMain(); // this must match the file/class name
     canvas.setSize(w,h);
     canvas.setBackground(new Color(255,255,255));
     frame.add(canvas);
